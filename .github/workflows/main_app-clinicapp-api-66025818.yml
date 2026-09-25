@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EA9AAF5BC7014714A704494FD9456185 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D9C6A3323DC347438380E0196953CAF2 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_75196764F42D49EDB7B33BDEA8D57D77 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_56CB28EBF73E43189780E069BD155A29 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_470933E773E443F9A3247D44C5710BB7 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C11C8BFEA16D4BB0B58B4849041155E1 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'app-clinicapp-api-66025818'
           slot-name: 'Production'
-          package: ./sever
+          package: .
           
